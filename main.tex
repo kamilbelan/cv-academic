@@ -1,23 +1,19 @@
 \documentclass[11pt, a4paper]{moderncv}
 
-% Style and colour
 \moderncvstyle{classic}
 \moderncvcolor{black}
 
-% Margins
 \usepackage[scale=0.85, top=2cm, bottom=2cm]{geometry}
 
-% Font
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[czech]{babel}
 
-% Reduce quote width for the optional tagline
-\setlength{\hintscolumnwidth}{3cm}   % left-column width (dates)
+\setlength{\hintscolumnwidth}{3cm}  
 
 % ---------------------------------------------------------------
-% Personal information
+% Osobni informace
 % ---------------------------------------------------------------
 \name{Kamil}{Belán}
 \title{Životopis}
@@ -43,21 +39,38 @@
 
 % ---------------------------------------------------------------
 \section{Výzkumné zájmy}
+Numerické metody pro řešení parciálních diferenciálních rovnic; dosavadní práce se týká
+
+\cvlistitem{stlačitelného stratifikovaného atmosférického proudění}
+\cvlistitem{lagrangeovských (částicových) metod, zejména SPH}
+\cvlistitem{well-balanced numerických schémat}
+
+\smallskip
+
+V doktorském studiu bych se rád věnoval metodám řešení stlačitelného proudění pomocí metod vyššího řádu, zejména
+
+\cvlistitem{nespojité Galerkinově metodě}
+\cvlistitem{hp-adaptivitě}
 
 % ---------------------------------------------------------------
 \section{Závěrečné práce}
+\cventry{2026}{Numerické metody pro simulaci proudění vzduchu kolem pohoří}{diplomová práce}{školitel doc. RNDr. Michal Pavelka, Ph.D.}{probíhající}{Cílem práce je dále rozvinout a otestovat numerickou metodu Smoothed Particle Hydrodynamics (SPH) pro řešení stlačitelného atmosférického proudění kolem horské překážky. Základem je reformulace úlohy v přirozených proměnných s robustním popisem topografie a implementace korektních radiačních okrajových podmínek. Hydrostatická nestabilita je pak adresována návrhem nových well-balanced schémat a dodatečné stabilizace založené na adaptivitě.}
+\cvitem{Repozitář}{(obě práce) \url{https://github.com/kamilbelan/sph-mountain-waves}}
+\cventry{2024}{Simulace obtékání pohoří pomocí Smoothed Particle Hydrodynamics}{bakalářská práce}{školitel doc. RNDr. Michal Pavelka, Ph.D.}{obhájeno}{Cílem práce je pomocí lagrangeovské numerické metody SPH simulovat stlačitelné atmosférické proudění kolem horské topografie, tedy úlohu typicky řešenou metodami na síti (FEM, FVM, FD.) Numerickými experimenty bylo ukázáno, že hydrostatická rovnováha v stratifikované atmosféře je pro standardní formulaci SPH zdrojem silných nestabilit, jež zcela znemožnují simulovat jevy jako například vnitřní gravitační vlny.}
 
 % ---------------------------------------------------------------
 \section{Projekty}
+\cvitem{Porovnání SPH a FEM}{Srovnání metod SPH (SmoothedParticles.jl) a FEM (Firedrake) na benchmarku stacionárního obtékání válce při Re=20.\newline \url{https://github.com/kamilbelan/cylinder-sph-fem}}
+
+\cvitem{Hydraulický model Enceladu}{Jednoduchý model vývoje hladiny rezervoáru nestlačitelné tekutiny ve slabé gravitaci pomocí ALE v FEniCS.\newline \url{https://github.com/kamilbelan/hydraulic-enceladus}}
 
 % ---------------------------------------------------------------
 %\section{Výuka}
-%\cventry{Year}{Course Title}{Institution}{}{}{Role / responsibilities}
 
 % ---------------------------------------------------------------
 \section{Technické dovednosti}
 \cvitem{Programovací jazyky}{Julia, Python, Mathematica, MATLAB}
-\cvitem{Knihovny pro řešení dif. rovnic}{DifferentialEquations.jl, Trixi.jl, Firedrake, Fenics}
+\cvitem{Knihovny pro řešení dif. rovnic}{DifferentialEquations.jl, Trixi.jl, Firedrake, FEniCS}
 \cvitem{Vizualizační nástroje}{Paraview, Matplotlib, Makie.jl, Plots.jl}
 \cvitem{Obecné}{LaTeX, Git, SSH, bash, SLURM, Docker}
 
@@ -66,14 +79,15 @@
 \cvitem{angličtina}{\textbf{C1} -- Cambridge certifikát}
 \cvitem{němčina}{\textbf{\textasciitilde B1} -- absolvované kurzy na MFF UK}
 
-\section{Certifikáty}
-\cventry{2021}{Zdravotník zotavovacích akcí (Akreditace MŠMT)}{Český červený kříž}{}{}{Státem uznaná certifikace v základech první pomoci, zdravotnického dozoru a hygieny.}
+\section{Pedagogické zkušenosti a certifikáty}
+\cventry{2025 -- současnost}{Lektorství na vzdělávacím kurzu RK Koblížek}{Junák -- český skaut}{}{}{Příprava a realizace vzdělávacích bloků pro budoucí vedoucí.}
 
-\section{Pedagogické zkušenosti}
-\cventry{2023}{Vůdcovský lesní kurz a zkouška }{Junák -- český skaut}{}{}{Komplexní školení a složení formálních zkoušek z pedagogiky, psychologie, metodiky vzdělávání, motivace a hodnocení, skupinové dynamiky.}
+\cventry{2023}{Vůdcovský lesní kurz a zkouška}{Junák -- český skaut}{}{}{Komplexní školení a složení formálních zkoušek z pedagogiky, psychologie, metodiky vzdělávání, motivace a hodnocení, skupinové dynamiky.}
+
 \cventry{2023}{Badatelsky orientovaná výuka (Program GLOBE)}{Vzdělávací centrum TEREZA}{}{}{Akreditovaný pedagogický kurz zaměřený na inovativní výukové metody.}
 
-\cventry{2025 -- současnost}{Lektorství na vzdělávacím kurzu RK Koblížek}{Junák -- český skaut}{}{}{Příprava a realizace vzdělávacích bloků pro budoucí vedoucí.}
+
+\cventry{2021}{Zdravotník zotavovacích akcí (Akreditace MŠMT)}{Český červený kříž}{}{}{Státem uznaná certifikace v základech první pomoci, zdravotnického dozoru a hygieny.}
 
 \section{Další zkušenosti}
 \cventry{2023 -- současnost}{Vedení skautského oddílu}{Junák -- český skaut}{}{}{Celoroční vedení a spolupráce uvnitř \textasciitilde 40členné skupiny.}
@@ -83,10 +97,7 @@
 
 % ---------------------------------------------------------------
 %\section{Ocenění a granty}
-%\cvitem{Year}{Description}
 
 % ---------------------------------------------------------------
-%\section{Reference}
-%\cvitem{}{K dispozici na vyžádání.}
 
 \end{document}
