@@ -1,0 +1,86 @@
+\documentclass[11pt, a4paper]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+\usepackage[scale=0.85, top=2cm, bottom=2cm]{geometry}
+
+\usepackage[czech]{babel}
+
+\setlength{\hintscolumnwidth}{3cm}  
+
+% ---------------------------------------------------------------
+% Osobni informace
+% ---------------------------------------------------------------
+\name{Kamil}{Belán}
+\title{Životopis}
+%\born{22.4.2002}
+%\address{Družstevní 20}{Třebíč}{Česká republika}
+\phone[mobile]{+420~722~475~973}
+\email{kamil@kamilbelan.net}
+% \homepage{yourwebsite.com}
+\social[github]{kamilbelan}
+% \social[linkedin]{yourlinkedin}
+% \photo[64pt][0pt]{photo}   % optional
+
+% ---------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+% ---------------------------------------------------------------
+\section{Vzdělání}
+\cventry{2026--současnost}{PhD.}{MFF UK}{Praha}{Numerická a výpočtová matematika}{probíhající}
+\cventry{2024--2026}{Mgr.}{MFF UK}{Praha}{Matematické a počítačové modelování ve fyzice}{}
+\cventry{2021--2024}{Bc.}{MFF UK}{Praha}{Fyzika}{}
+\cventry{2017--2021}{gymnázium}{}{Třebíč}{}{}
+
+% ---------------------------------------------------------------
+\section{Výzkumné zájmy}
+Numerické metody pro řešení parciálních diferenciálních rovnic; dosavadní práce se týká
+
+\cvlistitem{stlačitelného stratifikovaného atmosférického proudění}
+\cvlistitem{lagrangeovských (částicových) metod, zejména SPH}
+\cvlistitem{well-balanced numerických schémat}
+
+\smallskip
+
+V probíhajícím doktorském studiu jsou hlavním tématem metody vyššího řádu, zejména
+
+\cvlistitem{nespojitá Galerkinově metoda (DGM)}
+\cvlistitem{hp-adaptivitní DGM}
+
+% ---------------------------------------------------------------
+\section{Závěrečné práce}
+\cventry{2026}{Numerické metody pro simulaci proudění vzduchu kolem pohoří}{diplomová práce}{školitel doc. RNDr. Michal Pavelka, Ph.D.}{}{Cílem práce je dále rozvinout a otestovat numerickou metodu Smoothed Particle Hydrodynamics (SPH) pro řešení stlačitelného atmosférického proudění kolem horské překážky. Základem je reformulace úlohy v přirozených proměnných s robustním popisem topografie a koretní implementace okrajových podmínek na vtoku a výtoku. Hydrostatická (ne)stabilita je pak adresována návrhem nových well-balanced schémat a dodatečné stabilizace založené na adaptivitě.}
+\cvitem{Repozitář}{(obě práce) \url{https://github.com/kamilbelan/sph-mountain-waves}}
+\cventry{2024}{Simulace obtékání pohoří pomocí Smoothed Particle Hydrodynamics}{bakalářská práce}{školitel doc. RNDr. Michal Pavelka, Ph.D.}{}{Cílem práce je pomocí lagrangeovské numerické metody SPH simulovat stlačitelné atmosférické proudění kolem horské topografie, tedy úlohu typicky řešenou metodami na síti (FVM, FD.) Numerickými experimenty bylo ukázáno, že hydrostatická rovnováha v stratifikované atmosféře je pro standardní formulaci SPH zdrojem silných nestabilit, jež zcela znemožnují simulovat jevy jako například vnitřní gravitační vlny.}
+
+% ---------------------------------------------------------------
+%\section{Projekty}
+
+% ---------------------------------------------------------------
+%\section{Výuka}
+
+% ---------------------------------------------------------------
+\section{Technické dovednosti}
+\cvitem{Programovací jazyky}{Julia, Python, Mathematica, MATLAB}
+\cvitem{Obecné}{LaTeX, Git, SSH, bash, SLURM, Docker}
+
+\section{Cizí jazyky}
+\cvitem{čeština}{rodný jazyk}
+\cvitem{angličtina}{\textbf{C1} -- Cambridge certifikát}
+\cvitem{němčina}{\textbf{\textasciitilde B1} -- absolvované kurzy na MFF UK}
+
+%\section{Pedagogické zkušenosti a certifikáty}
+
+
+%\section{Další zkušenosti}
+
+
+% ---------------------------------------------------------------
+%\section{Ocenění a granty}
+
+% ---------------------------------------------------------------
+
+\end{document}
